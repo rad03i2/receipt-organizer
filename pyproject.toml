@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "receipt-organizer"
+version = "1.0.0"
+description = "Local-first CLI for organizing and reporting receipt records."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Radwan Abdulhadi Ahmed"}]
+dependencies = []
+
+[project.scripts]
+receipt-organizer = "receipt_organizer.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
